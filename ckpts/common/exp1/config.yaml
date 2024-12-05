@@ -1,0 +1,7 @@
+batch_size: 128
+example_num: 100
+is_preprocess: true
+l_logic_fac: 0.2
+max_epoch: 200
+min_sample_num: null
+pt_name: logical_reason.pt
