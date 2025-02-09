@@ -1,6 +1,10 @@
 import argparse
 import yaml
 
+def parse_none(value):
+    if value.lower() == 'none':
+        return None
+    return int(value)
 
 def parse_arg():
     parser = argparse.ArgumentParser(description='model parameter.')
@@ -14,7 +18,7 @@ def parse_arg():
                         default=128)
     parser.add_argument('--max_epoch', type=int, help='max epoch.',
                         default=200)
-    parser.add_argument('--min_sample_num', type=int, help='min sample num, None refer to ALL are chosen.',
+    parser.add_argument('--min_sample_num', type=parse_none, help='min sample num, None refer to ALL are chosen.',
                         default=3)  # None 3
     parser.add_argument('--l_logic_fac', type=float, help='logical loss hyper-parametric.',
                         default=0.2)
