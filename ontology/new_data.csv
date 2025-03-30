@@ -1,0 +1,8 @@
+"P12, LCDmonitor; 7; Front-bezel; Rectangle-narrow, 0-0, 76; blackColour; ; False"
+"P12, LCDmonitor; 2; Back-cover; Rectangle, 0-0, 79; blackColour; ; False"
+"P12, LCDmonitor; 1; Stand; Tilt-adjustable, 0-0, 13; blackColour; ; False"
+"P12, LCDmonitor; 0; Base; Round, 0-0, 30; blackColour; ; False"
+"P12, LCDmonitor; 4; Circuit-boards; Rectangle, 0-0, 17; greenColour; ; False"
+"P12, LCDmonitor; 3; PCB-cover; Rectangle, 0-0, 19; blackColour; ; False"
+"P12, LCDmonitor; 5; Carrier; Frame, 0-0, 76; blackColour; ; False"
+"P12, LCDmonitor; 6; LCD-module; Rectangle, 0-0, 74; blackColour; ; False"

@@ -1,0 +1,9 @@
+batch_size: 128
+dir_path: ./ckpts/sampling2_res_newmask_maxmask1/exp2/
+eval_num: 2
+example_num: 10
+is_preprocess: true
+l_logic_fac: 0.2
+max_epoch: 200
+min_sample_num: 4
+pt_name: logical_reason.pt

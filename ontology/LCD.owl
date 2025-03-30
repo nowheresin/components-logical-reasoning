@@ -1,0 +1,1006 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.LCD.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.LCD.com">
+    <Prefix name="" IRI="http://www.LCD.com#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="www" IRI="http://www.LCD.com#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adhesive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AreaFastener"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CablePort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Configuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CornerLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossHeadScrew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossHeadScrewDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossHeadScrewFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cutting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuttingBlades"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesignStandard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destructibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisassemblyAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drillbits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdgeLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fastener"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoughCircleDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoughLineDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LCDmonitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerceptionAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PointFastener"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Screw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScrewFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Screwdrivers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeamFastener"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlottedHeadScrew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlottedHeadScrewFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snapfit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unscrewing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canDetect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDesiredState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDestructibility"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFastener"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeometry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAtState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isColourOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDesiredStateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDestrucrivenessOfAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDetectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFastenerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGeometryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMadeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRemovedByAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedForAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedToMake"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#removesPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesTool"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CalibrationFactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConfigurationStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConfigurationValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Coordinates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DestructibilityDegree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DiagonalLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dimensions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DisassemblyState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LocationApproximationMargin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PointFastenerEdgeThreshold"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Size"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#backcover1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#base1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carrier1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#circuitboard1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#circularcolumn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frontbezel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#glass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lcdmodule1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#metal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pcb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pcbcover1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#plastic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rectangle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stand1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#triangle"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adhesive"/>
+        <Class IRI="#AreaFastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AreaFastener"/>
+        <Class IRI="#Fastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CablePort"/>
+        <Class IRI="#SeamFastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colour"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Component"/>
+        <Class IRI="#Part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Configuration"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CornerLocation"/>
+        <Class IRI="#EdgeLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossHeadScrew"/>
+        <Class IRI="#Screw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossHeadScrewDetection"/>
+        <Class IRI="#PerceptionAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossHeadScrewFeature"/>
+        <Class IRI="#ScrewFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cutting"/>
+        <Class IRI="#DisassemblyAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CuttingBlades"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destructibility"/>
+        <Class IRI="#DesignStandard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisassemblyAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drillbits"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drilling"/>
+        <Class IRI="#DisassemblyAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdgeLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fastener"/>
+        <Class IRI="#Part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geometry"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoughCircleDetection"/>
+        <Class IRI="#PerceptionAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoughLineDetection"/>
+        <Class IRI="#PerceptionAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LCDmonitor"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#DesignStandard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Part"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PointFastener"/>
+        <Class IRI="#Fastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Screw"/>
+        <Class IRI="#PointFastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScrewFeature"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Screwdrivers"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeamFastener"/>
+        <Class IRI="#Fastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlottedHeadScrew"/>
+        <Class IRI="#Screw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlottedHeadScrewFeature"/>
+        <Class IRI="#ScrewFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snapfit"/>
+        <Class IRI="#SeamFastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tape"/>
+        <Class IRI="#AreaFastener"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="#PhysicalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unscrewing"/>
+        <Class IRI="#DisassemblyAction"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Action"/>
+        <Class IRI="#DesignStandard"/>
+        <Class IRI="#Feature"/>
+        <Class IRI="#PhysicalEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Adhesive"/>
+        <Class IRI="#Tape"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AreaFastener"/>
+        <Class IRI="#PointFastener"/>
+        <Class IRI="#SeamFastener"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CablePort"/>
+        <Class IRI="#Snapfit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Colour"/>
+        <Class IRI="#Geometry"/>
+        <Class IRI="#ScrewFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Fastener"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Configuration"/>
+        <Class IRI="#EdgeLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CrossHeadScrew"/>
+        <Class IRI="#SlottedHeadScrew"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CrossHeadScrewDetection"/>
+        <Class IRI="#HoughCircleDetection"/>
+        <Class IRI="#HoughLineDetection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CrossHeadScrewFeature"/>
+        <Class IRI="#SlottedHeadScrewFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cutting"/>
+        <Class IRI="#Drilling"/>
+        <Class IRI="#Unscrewing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CuttingBlades"/>
+        <Class IRI="#Drillbits"/>
+        <Class IRI="#Screwdrivers"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DisassemblyAction"/>
+        <Class IRI="#PerceptionAction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Part"/>
+        <Class IRI="#Product"/>
+        <Class IRI="#Tool"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#backcover1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#base1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#carrier1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#circuitboard1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#frontbezel1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#lcdmodule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LCDmonitor"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#pcbcover1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Component"/>
+        <NamedIndividual IRI="#stand1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#backcover1"/>
+        <NamedIndividual IRI="#silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#backcover1"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#backcover1"/>
+        <NamedIndividual IRI="#plastic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#backcover1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#base1"/>
+        <NamedIndividual IRI="#silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#base1"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#base1"/>
+        <NamedIndividual IRI="#metal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#base1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#carrier1"/>
+        <NamedIndividual IRI="#silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#carrier1"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#carrier1"/>
+        <NamedIndividual IRI="#plastic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#carrier1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#circuitboard1"/>
+        <NamedIndividual IRI="#green"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#circuitboard1"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#circuitboard1"/>
+        <NamedIndividual IRI="#pcb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#circuitboard1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#frontbezel1"/>
+        <NamedIndividual IRI="#black"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#frontbezel1"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#frontbezel1"/>
+        <NamedIndividual IRI="#plastic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#frontbezel1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#lcdmodule1"/>
+        <NamedIndividual IRI="#black"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#lcdmodule1"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#lcdmodule1"/>
+        <NamedIndividual IRI="#glass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#lcdmodule1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#pcbcover1"/>
+        <NamedIndividual IRI="#black"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#pcbcover1"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#pcbcover1"/>
+        <NamedIndividual IRI="#plastic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#pcbcover1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasColour"/>
+        <NamedIndividual IRI="#stand1"/>
+        <NamedIndividual IRI="#silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <NamedIndividual IRI="#stand1"/>
+        <NamedIndividual IRI="#circularcolumn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#stand1"/>
+        <NamedIndividual IRI="#plastic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <NamedIndividual IRI="#stand1"/>
+        <NamedIndividual IRI="#lcdmonitor1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#backcover1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#backcover1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">68</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#base1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#base1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#carrier1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#carrier1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">66</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#circuitboard1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#circuitboard1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#frontbezel1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#frontbezel1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#lcdmodule1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#lcdmodule1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#pcbcover1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#pcbcover1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DisassemblyState"/>
+        <NamedIndividual IRI="#stand1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Size"/>
+        <NamedIndividual IRI="#stand1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canDetect"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasColour"/>
+        <ObjectProperty IRI="#hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty IRI="#hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDesiredState"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDestructibility"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFastener"/>
+        <ObjectProperty IRI="#hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <ObjectProperty IRI="#hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMaterial"/>
+        <ObjectProperty IRI="#hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAtState"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isColourOf"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDesiredStateOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDestrucrivenessOfAction"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDetectedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFastenerOf"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFeatureOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGeometryOf"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMadeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartOfConfiguration"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRemovedByAction"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isUsedForAction"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isUsedToMake"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#removesPart"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesTool"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#canDetect"/>
+        <ObjectProperty IRI="#isDetectedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasColour"/>
+        <ObjectProperty IRI="#isColourOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFastener"/>
+        <ObjectProperty IRI="#isFastenerOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasGeometry"/>
+        <ObjectProperty IRI="#isGeometryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CalibrationFactor"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ConfigurationStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ConfigurationValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Coordinates"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DestructibilityDegree"/>
+        <DataProperty IRI="#ConfigurationValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DiagonalLength"/>
+        <DataProperty IRI="#ConfigurationValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Dimensions"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DisassemblyState"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LocationApproximationMargin"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PointFastenerEdgeThreshold"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Size"/>
+        <DataProperty IRI="#ConfigurationValue"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

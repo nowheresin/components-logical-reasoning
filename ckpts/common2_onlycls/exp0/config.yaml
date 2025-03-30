@@ -1,0 +1,9 @@
+batch_size: 128
+dir_path: ./ckpts/common2_onlycls/exp0/
+eval_num: 0
+example_num: 10
+is_preprocess: true
+l_logic_fac: 0.2
+max_epoch: 200
+min_sample_num: null
+pt_name: logical_reason.pt

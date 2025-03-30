@@ -1,0 +1,9 @@
+batch_size: 128
+dir_path: ./ckpts/sampling2_res_newmask_woprocess/exp3/
+eval_num: 3
+example_num: 10
+is_preprocess: false
+l_logic_fac: 0.2
+max_epoch: 200
+min_sample_num: 3
+pt_name: logical_reason.pt
